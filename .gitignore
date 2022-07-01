@@ -13,7 +13,6 @@ captures/
 .externalNativeBuild/
 .cxx/
 output.json
-output-metadata.json
 
 # IntelliJ
 *.iml

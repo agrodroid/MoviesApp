@@ -22,9 +22,10 @@
 
         <ImageButton
             android:id="@+id/toolbarBackButton"
-            android:layout_width="@dimen/dp_20"
-            android:layout_height="@dimen/dp_20"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="@dimen/dp_48"
             android:layout_marginStart="@dimen/dp_16"
+            android:padding="@dimen/dp_12"
             android:background="@null"
             android:scaleType="centerCrop"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -40,7 +41,6 @@
             android:maxLines="1"
             android:ellipsize="end"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/dp_16"
             android:layout_marginEnd="@dimen/dp_16"
             android:fontFamily="@font/titillium_web_regular"
             android:text="@string/romantic_comedy"
@@ -53,9 +53,10 @@
 
         <ImageButton
             android:id="@+id/toolbarSearchButton"
-            android:layout_width="@dimen/dp_24"
-            android:layout_height="@dimen/dp_24"
+            android:layout_width="@dimen/dp_48"
+            android:layout_height="@dimen/dp_48"
             android:layout_marginEnd="@dimen/dp_16"
+            android:padding="@dimen/dp_12"
             android:background="@null"
             android:scaleType="centerCrop"
             app:layout_constraintBottom_toBottomOf="@+id/toolbarTitleTv"
