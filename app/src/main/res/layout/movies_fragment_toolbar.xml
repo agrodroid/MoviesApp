@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/movieToolbar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp_80"
+    android:background="@drawable/nav_bar_bg"
+    android:elevation="@dimen/dp_8"
+    android:minHeight="?attr/actionBarSize"
+    app:contentInsetEnd="@dimen/dp_0"
+    app:contentInsetStart="@dimen/dp_0"
+    app:contentInsetStartWithNavigation="@dimen/dp_0"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:showIn="@layout/fragment_movies">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/toolbarBackButton"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginStart="@dimen/dp_16"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.4"
+            app:srcCompat="@drawable/back_icon"
+            android:contentDescription="@string/back_button" />
+
+        <TextView
+            android:id="@+id/toolbarTitleTv"
+            android:layout_width="@dimen/dp_0"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_16"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:fontFamily="@font/titillium_web_regular"
+            android:text="@string/romantic_comedy"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_20"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbarBackButton"
+            app:layout_constraintEnd_toStartOf="@+id/toolbarSearchButton"
+            app:layout_constraintStart_toEndOf="@+id/toolbarBackButton"
+            app:layout_constraintTop_toTopOf="@+id/toolbarBackButton" />
+
+        <ImageButton
+            android:id="@+id/toolbarSearchButton"
+            android:layout_width="@dimen/dp_24"
+            android:layout_height="@dimen/dp_24"
+            android:layout_marginEnd="@dimen/dp_16"
+            android:background="@null"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toBottomOf="@+id/toolbarTitleTv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/toolbarTitleTv"
+            app:srcCompat="@drawable/search_icon"
+            android:contentDescription="@string/search_button" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.appcompat.widget.Toolbar>

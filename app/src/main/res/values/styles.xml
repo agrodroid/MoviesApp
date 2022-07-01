@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ProgressBarStyle">
+        <item name="android:indeterminate">true</item>
+        <item name="android:indeterminateTint">@color/hint_color</item>
+        <item name="android:indeterminateTintMode">src_atop</item>
+    </style>
+
+</resources>

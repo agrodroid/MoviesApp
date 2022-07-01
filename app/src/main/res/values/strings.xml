@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MoviesApp</string>
+    <string name="search_for_movies">Search for movies</string>
+    <string name="romantic_comedy">Romantic Comedy</string>
+    <string name="back_button">Back button</string>
+    <string name="search_button">Search button</string>
+    <string name="movie_poster">Movie poster</string>
+    <string name="clear_button">Clear button</string>
+</resources>
